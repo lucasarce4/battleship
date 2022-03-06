@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battleship</title>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/c9af9cd2d4.js" crosssorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1 id="title">BATTLESHIP</h1>
+      </div>
+
+      <div class="gameMenuContainer show">
+        <div class="menuGameboardContainer">
+          <div class="menuGameboard"></div>
+        </div>
+        <div class="rightSideContainer">
+          <div class="titleAndInstructions">
+            <h2 class="instructionsTitle">Place your Ships</h2>
+              <p class="instruction">Double click on the ships to rotate</p>
+              <p class="instruction">Drag and drop the ships on the board</p>
+          </div>
+          <div class="shipsContainer">
+            <div class="menuShip notPlaced" data-lenght="5" data-direction="x" draggable="true">
+              <div class="menuShipTile"></div>
+              <div class="menuShipTile"></div>
+              <div class="menuShipTile"></div>
+              <div class="menuShipTile"></div>
+              <div class="menuShipTile"></div>
+            </div>
+            <div class="menuShip notPlaced" data-lenght="4" data-direction="x" draggable="true">
+              <div class="menuShipTile"></div>
+              <div class="menuShipTile"></div>
+              <div class="menuShipTile"></div>
+              <div class="menuShipTile"></div>
+            </div>
+            <div class="menuShip notPlaced" data-lenght="3" data-direction="x" draggable="true">
+              <div class="menuShipTile"></div>
+              <div class="menuShipTile"></div>
+              <div class="menuShipTile"></div>
+            </div>
+            <div class="menuShip notPlaced" data-lenght="3" data-direction="x" draggable="true">
+              <div class="menuShipTile"></div>
+              <div class="menuShipTile"></div>
+              <div class="menuShipTile"></div>
+            </div>
+            <div class="menuShip notPlaced" data-lenght="2" data-direction="x" draggable="true">
+              <div class="menuShipTile"></div>
+              <div class="menuShipTile"></div>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="reset">Reset</button>
+            <button class="start">Start</button>
+          </div>
+        </div>
+      </div>
+      <div class="gameboardContainer">
+        <div class="gameboard">
+          <div class="gameboard-player" data-player></div>
+          <div class="gameboard-cpu" data-cpu></div>
+        </div>
+        <button class="restart">Restart</button>
+      </div>
+      <div class="gameFinishedContainer">
+        <div class="gameFinished">
+          <div class="gameFinishedMessage">
+            <p class="lineOne"></p>
+            <p class="lineTwo"></p>
+          </div>
+          <button class="restart">Restart</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
